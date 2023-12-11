@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shutter Stock Palm Beach Hotel </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "main.js" defer></script>
+    
+  </head>
+  <body>
+    <!-- code for navigation bar -->
+    <nav class="navbar">
+      <div class="navdiv">
+          <div class="main logo"><a href="https://www.shutterstockpalmbeachhotel.lk">
+            <img src="logo.PNG" class="logo">
+          </a>
+          </div>
+          <div class="menubar">
+            <ul>
+              <!-- making each page link to each other -->
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="branches page.html">BRANCHES</a></li>
+              <li><a href="adventures page.html">ADVENTURES</a></li>
+              <li><a href="restaurants page.html">RESTAURANTS</a></li>
+              <li><a href="weddings.html">WEDDINGS</a></li>
+              <li><a href="bonfire night.html">BONFIRE & PARTIES</a></li>
+              <li><a href="hotel booking page.html">BOOKINGS</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- inserting a horizontal line -->
+    <hr class="coloured-line">
+    <div class="coloured-line"></div>
+    <br>
+    <br>
+
+    <!-- three checkings on the top of the page -->
+    <div class="checking">
+      <form class="form">
+        <select class="branch" name="selectBranch">
+          <option value="none">Select Branch</option>
+          <option value="Heavens">Heavens-Galle</option>
+          <option value="underwater Mystery">Underwater Mystery-Trincomalee</option>
+          <option value="luxury Fantasy">luxury Fantasy-Colombo</option>
+        </select>
+        
+        <label for="checkIn" class="Check-in">
+          Check-in:<input type="date" id="checkIn">
+        </label>
+        <label for="checkOut" class="Check-in">
+          Check-out:<input type="date" id="checkOut" >
+        </label>
+      </form>
+    </div>
+    <br>
+    <br>
+
+    <!-- inserting hotel booking and adventure booking forms -->
+    <div class="containerA">
+      
+      <!-- inserting hotel booking form -->
+        <form class="form-1">
+          <div class="form1">
+            <h1 class="h1-9">Hotel Booking!</h1>
+
+            <label for="fullName" class="Full-name">
+              Full Name : <input type="text" id = "fullName" placeholder="Enter your full name" required>
+            </label><br>
+            <br>
+
+            <label for="phoneNumber" class="Full-name">
+              Phone : <input type="text" id = "phoneNumber" placeholder="Enter your phone number" required>
+            </label><br>
+            <br>
+
+            <label for="email" class="Full-name">
+              Email : <input type="email" id = "email" placeholder="Enter your email address" required autocomplete="email">
+            </label><br>
+            <br>
+
+            <label for="nationality" class="Full-name">
+              Country : <input type="nationality" id = "nationality" placeholder="Enter your country" required>
+            </label><br>
+            <br>
+
+            <label for="noOfAdults" class="Full-name">
+              No of Adults : <input type="number" id = "noOfAdults" min="0" value="0" required>
+            </label><br>
+            <br>
+
+            <label for="noOfChildren" class="Full-name">
+              No of Children : <input type="number"id = "noOfChildren" min="0" value="0" required>
+            </label><br>
+            <br>
+
+            <label for="kidsAbove5" class="Full-name">
+              No of Children Above 5 Years of Age : <input type="number"id = "kidsAbove5" min="0" value="0" required>
+            </label><br>
+            <br>
+
+            <!-- <label for="No-of-rooms" class="Full-name">
+              No of Rooms : <input type="number"id = "No-of-rooms" min="1" value="1" required>
+            </label><br>
+            <br> -->
+
+            <fieldset>
+
+              <legend>No of Rooms and Room Type</legend>
+              <p>
+                  <input type="checkbox" id="SingleRoom" name="RoomType" value="SingleRoom">
+                  <label for="SingleRoom">Single</label>
+                  <input type="number" id="singleRoomQuantity" name="SingleRoomQuantity" min="0" value="0" required>
+              </p>
+              <p>
+                  <input type="checkbox" id="DoubleRoom"  name="RoomType" value="DoubleRoom">
+                  <label for="DoubleRoom" >Double</label>
+                  <input type="number" id="doubleRoomQuantity" name="DoubleRoomQuantity" min="0" value="0" required>
+              </p>
+              <p>
+                <input type="checkbox" id="TripleRoom"  name="RoomType" value="TripleRoom">
+                <label for="TripleRoom">Triple</label>
+                <input type="number" id="tripleRoomQuantity" name="TripleRoomQuantity" min="0" value="0" required>
+              </p>
+              
+            </fieldset><br>
+            <br>
+
+            <fieldset>
+
+              <legend>Extra Requirements</legend>
+              <p>
+                  <input type="checkbox" id="WiFi" name="extraRequirements" value="WiFi">
+                  <label for="WiFi" >WiFi Access</label>
+              </p>
+              <p>
+                  <input type="checkbox" id="Pool"  name="extraRequirements" value="Pool">
+                  <label for="Pool" >Pool View</label>
+              </p>
+              <p>
+                <input type="checkbox" id="Garden"  name="extraRequirements" value="Garden">
+                <label for="Garden">Garden View</label>
+              </p>
+              <p>
+                <input type="checkbox" id="Extra-Bed"  name="extraRequirements" value="Extra-Bed">
+                <label for="Extra-Bed" >Extra-Bed</label>
+              </p>
+              
+            </fieldset><br>
+            <br>
+
+            <label for="promoCode" class="Full-name">
+              Promo Code : <input type="text" id = "promoCode" placeholder="Enter the promo code" required>
+            </label><br>
+
+            <!-- <p id="output1">Current Booking(s)</p> -->
+            <fieldset>
+              <legend>Current Booking(s)</legend>
+              <p id="currentBookingInfo">
+                  No current bookings
+              </p>
+            </fieldset><br>
+            <br>
+
+            <fieldset>
+              <legend>Cost of Current Booking(s)</legend>
+              <p id="CurrentBookingCost">
+                  0.00 LKR
+              </p>
+            </fieldset><br>
+            <br>
+            
+            <div class="Btn">
+             <button type="button" id="addBookingBtn">BOOK NOW!</button>
+            </div><br>
+            <br>
+
+            <div class="Btn">
+              <button type="button" id="addAnotherBookingBtn">CLICK TO ADD ANOTHER BOOKING!</button>
+             </div>
+
+          </div>
+        </form>
+        
+        <!-- inserting adventure booking -->
+        <form class="form-2">
+          <div id="form1">
+            <h1 class="h1-9">Adventure Booking!</h1>
+
+            <label class="Full-name">
+              Full Name : <input type="text" id = fullNameAdventure" name ="Full-Name" placeholder="Enter your full name" required>
+            </label><br>
+            <br>
+
+            <fieldset>
+
+              <legend>Adventure Type</legend>
+              <p>
+                  <input type="checkbox" id="whaleWatching" name="adventureType" value="Whale Watching">
+                  <label for="whaleWatching" >Whale Watching</label>
+              </p>
+              <p>
+                  <input type="checkbox" id="boatRidesAndCruises"  name="adventureType" value="Boat Rides and Cruises">
+                  <label for="boatRidesAndCruises" >Boat Rides and Cruises</label>
+              </p>
+              <p>
+                <input type="checkbox" id="scubaDiving"  name="adventureType" value="Scuba Diving">
+                <label for="scubaDiving" >Scuba Diving</label>
+              </p>
+              
+            </fieldset><br>
+            <br>
+
+            <label for="noofAdultsAd" class="Full-name">
+              No of adults singed up for diving : <input type="number" id = "noofAdultsAd"name="No-of-adults" min="0" value="0" required>
+            </label><br>
+            <br>
+
+            <label for="noofChildrenAd" class="Full-name">
+              No of children singed up for diving : <input type="number"id = "noofChildrenAd" name="No-of-childern" min="0" value="0" required>
+            </label><br>
+            <br>
+
+            <label for="kidsAbove5Ad" class="Full-name">
+              No of children above 5 Years of age singed up for diving  : <input type="number"id = "kidsAbove5Ad" min="0" value="0" required>
+            </label><br>
+            <br>
+
+            <fieldset>
+
+              <legend>Do you require a guide for the diving sessions?</legend>
+              <p>
+                  <input type="checkbox" id="adult" name="divingGuide" value="adult">
+                  <label for="adult">Guide for Adults</label>
+              </p>
+              <p>
+                  <input type="checkbox" id="kid"  name="divingGuide" value="kid">
+                  <label for="kid">Guide for Kids</label>
+              </p>
+              
+            </fieldset><br>
+            <br>
+
+            <div class="Btn">
+              <button type="button" id="addAdventureBtn">BOOK ADVENTURE!</button>
+             </div>
+          
+             <p id="adventureInfo"></p>
+             <br>
+
+             <div class="Btn">
+              <button type="button" id="overallCostBtn">CHECK OVERALL BOOKINGS!</button>
+             </div>
+
+             <p id="overallBookingInfo">Overall Booking</p>
+
+            <fieldset>
+              <legend>Cost of Overall Booking</legend>
+              <p id="OverallCostOutput">
+                  0.00 LKR
+              </p>
+            </fieldset><br>
+            <br>
+
+            <div class="Btn">
+              <button type="button" id="addToFaviouritesBtn">ADD TO FAVIOURITES!</button>
+             </div>
+
+             <p id="faviouritesInfo"></p>
+
+             <br>
+
+             <div class="Btn">
+              <button type="button" id="CheckLoyaltyPointsBtn">CHECK LOYALTY POINTS!</button>
+             </div>
+
+             <p id="loyaltyPointsInfo"></p>
+
+          </div>
+        </form>
+      
+    </div>
+    <br>
+    <br>
+
+    <!-- footer part of booking page -->
+    <footer class="footer">
+      <div class="container4">
+        <div class="row">
+          <div class="footer1">
+            <h4>PAGES</h4>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="branches page.html">BRANCHES</a></li>
+              <li><a href="adventures page.html">ADVENTURES</a></li>
+              <li><a href="restaurants page.html">RESTAURANTS</a></li>
+              <li><a href="weddings.html">WEDDINGS</a></li>
+              <li><a href="bonfire night.html">BONFIRE & PARTIES</a></li>
+              <li><a href="hotel booking page.html">BOOKINGS</a></li>
+            </ul>
+          </div>
+          <div class="footer1">
+            <h4>ABOUT</h4>
+            <ul>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+              <li><a href="#">REVIEWS</a></li>
+              <li><a href="#">CONTACT NUMBER</a></li>
+              <li><a href="#">CUSTOMER SERVICE HELP</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
